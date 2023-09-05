@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        h1 {
+            color: blue; 
+        }
+        table {
+            width: 100%;
+        }
+        th {
+            width: 30%; 
+        }
+        td {
+            padding: 0px;  
+            width: 100%;
+        }
+        a {
+            text-decoration: underline; 
+            color: blue; 
+        }
+        input[type="checkbox"], input[type="radio"] {
+            color: blue; 
+        }
+        input[type="text"], input[type="password"], input[type="number"], select {
+            width: 100%; 
+        }
+        #c1{
+            text-align:left;
+        }
+        #c2{
+           text-align:right;
+        }
+    </style>
+</head>
+<body>
+    <center> 
+        <h1>Registration form</h1>
+        <form>
+            <table border="1">
+                <tr>
+                <th>First Name</th>
+                <th>
+                   <label for="fn"></label>
+                   <input type="text" name="fn">
+                </th>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <th>
+                   <label for="ln"></label>
+                   <input type="text" name="ln">
+                </th>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <th>
+                   <label for="email"></label>
+                   <input type="text" name="email">
+                </th>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <th>
+                   <label for="password"></label>
+                   <input type="text" name="password">
+                </th>
+            </tr>
+            <tr>
+                <th>Re-enter Password</th>
+                <th>
+                   <label for="re-pa"></label>
+                   <input type="text" name="re-pa">
+                </th>
+            </tr>
+
+            <tr>
+                    <th rowspan="2">Gender</th>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+             <tr>
+                <th>Age:</th>
+                <th>
+                   <label for="age"></label>
+                   <input type="number" name="age">
+                </th>
+            </tr>
+            <tr>
+                <th>Phone Number:</th>
+                <th>
+                   <label for="phno"></label>
+                   <input type="number" name="phno">
+                </th>
+            </tr>
+            <tr>
+                <th row span="3">Address</th>
+                <th>
+                   <label for="address"></label>
+                   <input type="text" name="address">
+                </th>
+            </tr>
+            <tr>
+                <th>State</th>
+                <th>
+                   <label for="state"></label>
+                   <input type="text" name="state">
+                </th>
+            </tr>
+            <tr>
+                    <th>Country</th>
+                    <td>
+                        <select name="country">
+                            <option value="india">India</option>
+                            <option value="usa">USA</option>
+                            <option value="japan">Japan</option>
+                            <option value="china">China</option>
+                            <option value="russia">Russia</option>
+                        </select>
+                    </td>
+                </tr>
+              <tr>
+                <th>Languages Known</th>
+                <td>
+                    <input type="checkbox"/>English
+                    <input type="checkbox"/>Kannada
+                    <input type="checkbox"/>Hindi
+                    <input type="checkbox"/>Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="c1">
+                    <input type="checkbox" name="accept_conditions" checked/>Hereby I declare all the given details are true 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="c2">
+                    <p>Login in to<a href="https://www.ethnus.com">Ethnus</a> website</p>
+                </td>
+            </tr>
+
+        </table>
+           <div>
+                <input type="submit" value="Register">
+            </div>
+    </center>
+</body>
+</html>

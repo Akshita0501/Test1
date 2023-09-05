@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <h1 class="center-text">Hoverable Sidenav Buttons</h1>
+   <p class="p-text">Hover over the buttons in the left side navigation to open them.</p>
+    <style>
+        .nav-box {
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            position: fixed;
+            left: -250px;
+            top: 0;
+            transition: left 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .nav-box:hover {
+            left: 0;
+        }
+
+        .nav-button {
+            width: 100%;
+            padding: 10px;
+            text-align: left;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-bottom: 7px;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .green-button {
+            background-color: green;
+        }
+
+        .blue-button {
+            background-color: blue;
+        }
+
+        .red-button {
+            background-color: red;
+        }
+
+        .brown-button {
+            background-color: brown;
+        }
+        .center-text {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .p-text{
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-box">
+        <a class="nav-button green-button" href="#">Green Button</a>
+        <a class="nav-button blue-button" href="#">Blue Button</a>
+        <a class="nav-button red-button" href="#">Red Button</a>
+        <a class="nav-button brown-button" href="#">Brown Button</a>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            width: 150px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-inline {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group form-inline">
+                <label for="fullname">Fullname:</label>
+                <input type="text" id="fullname" name="fullname" value="Vincent Maverick Durano" required>
+            </div>
+            <div class="form-group form-inline">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" value="Vinz" required>
+            </div>
+            <div class="form-group form-inline">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" value="********" onfocus="this.type='password'" required>
+            </div>
+            <div class="form-group form-inline">
+                <label for="repassword">Re-Password:</label>
+                <input type="password" id="repassword" name="repassword" value="********" onfocus="this.type='password'" required>
+            </div>
+            <div class="form-group form-inline">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" value="Cebu,Philippines" required>
+            </div>
+            <div class="form-group form-inline">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" value="22" required>
+            </div>
+            <div class="form-group form-inline">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+</body>
+</html>
