@@ -1,79 +1,65 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)file:///C:/Users/J.AKSHITA/Desktop/task10.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10</title>
     <style>
-        
         body {
             background-color: yellow;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .container {
-            display: flex;
-            flex-direction: column; 
+        .d {
+            color: purple;
+            margin-left: 20%;
+            margin-right: 40%;
         }
 
-        
-        .small-box {
-            width: 150%; 
-            padding: 15px;
-            text-align: center;
-            background-color: white;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            margin-bottom: 10px;
+        ul {
+            list-style-type: none;
+            position: absolute;
+        }
+
+        li a {
+            text-decoration: none;
+            display: block;
             color: blue;
-            margin-top: 20px; 
-            margin-left: 20px; 
         }
 
-        
-        .content {
-            width: 70%; 
-            padding: 20px;
+        li {
+            background-color: white;
+            padding: 10px;
+            margin: 5px;
+            width: 95px;
+            border-right: 20px solid black;
         }
 
-        
-        h1, p {
-            color: brown;
-            font-style: times new roman;
-            margin: 4px; 
+        #h {
+            border: 1px dotted purple;
         }
 
-        
-        .line-with-date {
-            border-top: 1px solid #ccc;
-            padding-top: 10px;
-            text-align: left;
-            color: brown;
+        #i {
+            color: purple;
         }
     </style>
 </head>
 <body>
-    
-    <div class="container">
-        <div class="small-box">Home Page</div>
-        <div class="small-box">Musings</div>
-        <div class="small-box">My town</div>
-        <div class="small-box">Links</div>
+    <div class="nav">
+        <ul>
+            <li><a href="" id="i">Home page</a></li>
+            <li><a href="">Musings</a></li>
+            <li><a href="">My town</a></li>
+            <li><a href="">Links</a></li>
+        </ul>
     </div>
-    
-    <!-- Content on the other side -->
-    <div class="content">
-        <h1>My First Styled Page</h1>
-        <p>Welcome to my styled page!</p>
-        <br><p>It lacks images, but at least it has style. And it<br> has links, even if they don't go anywhere...</p><p>
-        <br></p><p>There should be more here, but I don't know <br>what yet.</p>
-        
-        
-        <div class="line-with-date">Made 5 April 2004 <br>by myself</div>
+    <div class="d">
+        <h1>My first styled page</h1>
+        <p>Welcome to my styled page!<br>
+        <br>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...<br>
+        <br>There should be more here, but I don't know what yet<hr id="h">
+        <br><br><i>Made 5 April 2004<br>by myself</i></p>
     </div>
-
-
-
-
-</body></html>
+</body>
+</html>
